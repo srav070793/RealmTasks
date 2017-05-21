@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Search on FB</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="HeaderTextNav">Facebook Search</string>
+    <string name="facebook_app_id">1480854951947032</string>
+    <string name="accessToken">EAAULAQ5nmWIBAKJsm8hdYwqZARur3oOANv07bheHLCK2U6WmDcBRZC9kx60bYb6Nd8KHow4BK3ONreZAeptl7ZCqMiZCY877hONUufxBs91sJdgl2PQcsh4x4kotAOiav3e8eRc04pIjIpmTO6ItWwWYYc3CwPcYZD</string>
+    <string name="title_activity_results">ResultsActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_details">DetailsActivity</string>
+    <string name="albumMsg">albumsError</string>
+    <string name="title_activity_favorites">FavoritesActivity</string>
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.searchfromfb.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="122dp"
+        android:layout_height="479dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:layout_editor_absoluteX="16dp">
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="272dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Enter a keyword"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:visibility="visible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/searchBox"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="357dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/searchBtn"
+        android:layout_width="164dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="16dp"
+        android:onClick="sendQuery"
+        android:text="Search"
+        app:layout_constraintBaseline_toBaselineOf="@+id/clearBtn"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteX="204dp" />
+
+    <Button
+        android:id="@+id/clearBtn"
+        android:layout_width="167dp"
+        android:layout_height="49dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:onClick="clearText"
+        android:text="Clear"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/searchBtn"
+        app:layout_constraintTop_toBottomOf="@+id/searchBox" />
+
+</android.support.constraint.ConstraintLayout>
